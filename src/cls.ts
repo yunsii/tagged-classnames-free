@@ -1,24 +1,15 @@
 import clsx from 'clsx'
 
 function normalizeStrings(strings: string[]) {
-  let result: string[] = []
+  const lineCommentPattern = /\/\/.*((\r?\n)|$)/g
 
-  strings.forEach((stringItem) => {
-    const segments = stringItem
-      .split('\n')
-      .map((item) => item.trim())
-      .filter((item) => !item.startsWith('//'))
+  let result = strings.join(' ')
 
-    segments.forEach((item) => {
-      result = result.concat(
-        item
-          .split(/[\t ]/)
-          .map((item) => item.trim())
-          .filter(Boolean),
-      )
-    })
-  })
-  return result.join(' ')
+  if (result.includes('//')) {
+    result = result.replace(lineCommentPattern, '')
+  }
+
+  return result.replace(/\s+/g, ' ').trim()
 }
 
 export function handleCls(
