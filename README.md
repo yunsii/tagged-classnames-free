@@ -25,11 +25,21 @@ Based on [clsx](https://github.com/lukeed/clsx), support inline comment. Free to
 
 Based on [cls](#cls), support inline comment. Merge Tailwind CSS classes without style conflicts by [tailwind-merge](https://github.com/dcastil/tailwind-merge).
 
-## Advanced
+## Furthermore
 
-You might worried about the package increase extra burdens to **runtime performance? Don't worry.** there is a plugin [`unplugin-polish-tagged-templates`](https://github.com/yunsii/unplugin-polish-tagged-templates) to optimize for you.
+### Developer eXperience
+
+**Wrap/unwrap** tagged classnames by functions or html tags at sometime is unavoidable, you must **NOT** want to **indent/dedent** manually.
+
+Luckily, [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn) has a **[template-indent](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/template-indent.md)** rule for us to auto indent/dedent.
+
+### Runtime performance
+
+You might also worried about the package increase extra burdens to **runtime performance? Don't worry.** there is a plugin [`unplugin-polish-tagged-templates`](https://github.com/yunsii/unplugin-polish-tagged-templates) to optimize for you.
 
 After enhanced by [`unplugin-polish-tagged-templates`](https://github.com/yunsii/unplugin-polish-tagged-templates), feel free to use `cls` and `tw` tags.
+
+> _Try **overall features** on [CodeSandbox](https://codesandbox.io/p/sandbox/github/yunsii/tagged-classnames-free)._
 
 ## Build & Publish
 
