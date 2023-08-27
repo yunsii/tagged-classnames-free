@@ -1,0 +1,4 @@
+# ref: https://www.gitpod.io/docs/introduction/learn-gitpod/gitpod-yaml
+tasks:
+  - init: pnpm install
+    command: pnpm run dev

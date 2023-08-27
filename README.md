@@ -39,7 +39,7 @@ You might also worried about the package increase extra burdens to **runtime per
 
 After enhanced by [`unplugin-polish-tagged-templates`](https://github.com/yunsii/unplugin-polish-tagged-templates), feel free to use `cls` and `tw` tags.
 
-> _Try **overall features** on [CodeSandbox](https://codesandbox.io/p/sandbox/github/yunsii/tagged-classnames-free)._
+> _Try **overall features** on [Gitpod](https://gitpod.io/#https://github.com/yunsii/tagged-classnames-free)._
 
 ## Build & Publish
 
