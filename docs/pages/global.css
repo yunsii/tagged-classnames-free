@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.vp-local-navCtn svg {
+  display: inline;
+  vertical-align: unset;
+}

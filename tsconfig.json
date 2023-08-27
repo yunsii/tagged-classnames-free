@@ -21,9 +21,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "pkg-name": ["./src"]
+      "tagged-classnames-free": ["./src"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "docs"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -1,3 +1,5 @@
+import './global.css'
+
 import React from 'react'
 import { createTheme, defaultSideNavs } from 'vite-pages-theme-doc'
 
@@ -9,21 +11,11 @@ const theme: Theme = (props) => {
   const { loadedData, loadState } = props
 
   const DocTheme = createTheme({
-    logo: <div style={{ fontSize: '20px' }}>pkg-name</div>,
+    logo: <div style={{ fontSize: '20px' }}>tagged-classnames-free</div>,
     topNavs: [
       {
-        label: 'Components',
-        path: '/components',
-        activeIfMatch: '/components',
-      },
-      {
-        label: 'Hooks',
-        path: '/hooks',
-        activeIfMatch: '/hooks',
-      },
-      {
-        label: 'pkg-name',
-        href: 'https://github.com/yunsii/starter-vite-react-library',
+        label: 'tagged-classnames-free',
+        href: 'https://github.com/yunsii/tagged-classnames-free',
       },
     ],
     sideNavs: (ctx) => {

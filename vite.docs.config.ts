@@ -2,6 +2,7 @@ import path from 'path'
 
 import { mergeConfig } from 'vite'
 import pages, { DefaultPageStrategy } from 'vite-plugin-react-pages'
+import polishTaggedTemplates from 'unplugin-polish-tagged-templates/vite'
 
 import baseConfig from './vite.base.config'
 
@@ -10,6 +11,9 @@ import type { UserConfig } from 'vite'
 // https://vitejs.dev/config/
 export default mergeConfig(baseConfig, {
   plugins: [
+    polishTaggedTemplates({
+      cssTags: ['tw', 'cls'],
+    }),
     pages({
       pagesDir: path.join(__dirname, 'docs/pages'),
       pageStrategy: new DefaultPageStrategy({
