@@ -19,7 +19,7 @@ const className = tw`text-lg ${moreClassName}`
 
 ### [`cls`](./src/cls.ts)
 
-Based on [clsx](https://github.com/lukeed/clsx), support inline comment. Free to use [`clsx` supported expressions](https://github.com/lukeed/clsx#usage).
+Based on [clsx](https://github.com/lukeed/clsx), support inline comment. Free to use [_clsx_ supported expressions](https://github.com/lukeed/clsx#usage).
 
 ### [`tw`](./src/tw.ts)
 
@@ -35,9 +35,9 @@ Luckily, [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-u
 
 ### Runtime performance
 
-You might also worried about the package increase extra burdens to **runtime performance? Don't worry.** there is a plugin [`unplugin-polish-tagged-templates`](https://github.com/yunsii/unplugin-polish-tagged-templates) to optimize for you.
+You might also worried about the package increase extra burdens to **runtime performance? Don't worry.** there is a plugin [unplugin-polish-tagged-templates](https://github.com/yunsii/unplugin-polish-tagged-templates) to optimize for you.
 
-After enhanced by [`unplugin-polish-tagged-templates`](https://github.com/yunsii/unplugin-polish-tagged-templates), feel free to use `cls` and `tw` tags.
+After enhanced by [unplugin-polish-tagged-templates](https://github.com/yunsii/unplugin-polish-tagged-templates), feel free to use `cls` and `tw` tags.
 
 > _Try **overall features** on [Gitpod](https://gitpod.io/#https://github.com/yunsii/tagged-classnames-free)._
 
@@ -50,7 +50,7 @@ After enhanced by [`unplugin-polish-tagged-templates`](https://github.com/yunsii
 - `npx changeset publish`
 - `git push --follow-tags`
 
-> [`changeset` prerelease doc](https://github.com/changesets/changesets/blob/main/docs/prereleases.md)
+> [_changeset_ prerelease doc](https://github.com/changesets/changesets/blob/main/docs/prereleases.md)
 
 ## License
 
