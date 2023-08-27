@@ -1,13 +1,13 @@
 import { cls, tw } from 'tagged-classnames-free'
 import React, { useState } from 'react'
 
-import { buttonCls } from './index.cls'
+import classes from './index.cls'
 
 export default function Examples() {
   const [textClassName, setTextClassName] = useState('')
 
   return (
-    <div className={tw`mx-auto max-w-4xl`}>
+    <div className={classes.container}>
       <figure className='md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800'>
         <img
           className={cls`
@@ -38,7 +38,7 @@ export default function Examples() {
       <hr className='my-3' />
       <div className='flex gap-x-2 mb-2'>
         <button
-          className={buttonCls}
+          className={classes.button}
           onClick={() => {
             setTextClassName(cls`text-2xl`)
           }}
@@ -46,7 +46,7 @@ export default function Examples() {
           set text-2xl
         </button>
         <button
-          className={buttonCls}
+          className={classes.button}
           onClick={() => {
             setTextClassName('')
           }}
