@@ -20,7 +20,8 @@
     "css",
     "classes",
     "tailwind",
-    "tailwind-merge"
+    "tailwind-merge",
+    "clsx"
   ],
   "funding": [
     "https://opencollective.com/yuns",
