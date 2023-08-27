@@ -6,3 +6,7 @@
   display: inline;
   vertical-align: unset;
 }
+
+.markdown-body li {
+  list-style: disc;
+}
