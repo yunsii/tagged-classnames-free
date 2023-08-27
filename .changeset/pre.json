@@ -1,0 +1,10 @@
+{
+  "mode": "pre",
+  "tag": "next",
+  "initialVersions": {
+    "tagged-classnames-free": "0.0.0"
+  },
+  "changesets": [
+    "rare-toys-rest"
+  ]
+}
