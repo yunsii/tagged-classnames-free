@@ -1,6 +1,8 @@
 # tagged-classnames-free
 
-[![NPM version](https://img.shields.io/npm/v/tagged-classnames-free?color=a1b858&label=)](https://www.npmjs.com/package/tagged-classnames-free)
+Free to use tagged classnames, powered by clsx and tailwind-merge.
+
+[![NPM version](https://img.shields.io/npm/v/tagged-classnames-free?color=a1b858&label=)](https://www.npmjs.com/package/tagged-classnames-free) [![Download monthly](https://img.shields.io/npm/dm/tagged-classnames-free.svg)](https://www.npmjs.com/package/tagged-classnames-free)
 
 ## Usage
 
