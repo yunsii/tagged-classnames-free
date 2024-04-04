@@ -5,6 +5,18 @@ import classes from './index.cls'
 
 export default function Examples() {
   const [textClassName, setTextClassName] = useState('')
+  const [bold, setBold] = useState(false)
+  const [italic, setItalic] = useState(false)
+
+  const textCls = tw`
+    text-lg
+    ${textClassName}
+    ${bold ? 'font-bold' : 'font-normal'}
+    ${{
+      'italic': italic,
+      'not-italic': !italic,
+    }}
+  `
 
   return (
     <div className={classes.container}>
@@ -48,13 +60,31 @@ export default function Examples() {
         <button
           className={classes.button}
           onClick={() => {
+            setBold(true)
+          }}
+        >
+          bold
+        </button>
+        <button
+          className={classes.button}
+          onClick={() => {
+            setItalic(true)
+          }}
+        >
+          italic
+        </button>
+        <button
+          className={classes.button}
+          onClick={() => {
             setTextClassName('')
+            setBold(false)
+            setItalic(false)
           }}
         >
           reset
         </button>
       </div>
-      <div className={tw`text-lg ${textClassName}`}>Hello, world</div>
+      <div className={textCls}>Hello, world</div>
     </div>
   )
 }
