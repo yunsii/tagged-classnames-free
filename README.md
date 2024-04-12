@@ -17,6 +17,20 @@ const className = cls`
 const className = tw`text-lg ${moreClassName}`
 ```
 
+## VS Code Integration
+
+```json5
+// .vscode/settings.json
+{
+  'tailwindCSS.experimental.classRegex': [
+    ['tw`((?:\\S|\\s)*?)`', "'([^']+)'"],
+    'tw`((\\S|\\s)*?)`',
+    ['cls`((?:\\S|\\s)*?)`', "'([^']+)'"],
+    'cls`((\\S|\\s)*?)`',
+  ],
+}
+```
+
 ## Functions
 
 ### [`cls`](./src/cls.ts)

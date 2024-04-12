@@ -1,3 +1,9 @@
 {
-  "tailwindCSS.experimental.classRegex": ["tw`((\\S|\\s)*?)`"]
+  // ref: https://github.com/tailwindlabs/tailwindcss-intellisense/issues/946#issuecomment-2050811573
+  "tailwindCSS.experimental.classRegex": [
+    ["tw`((?:\\S|\\s)*?)`", "'([^']+)'"],
+    "tw`((\\S|\\s)*?)`",
+    ["cls`((?:\\S|\\s)*?)`", "'([^']+)'"],
+    "cls`((\\S|\\s)*?)`"
+  ]
 }
