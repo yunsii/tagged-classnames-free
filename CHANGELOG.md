@@ -1,5 +1,11 @@
 # tagged-classnames-free
 
+## 0.1.1
+
+### Patch Changes
+
+- 🐛 fix: use peerDependencies
+
 ## 0.1.0
 
 ### Minor Changes
