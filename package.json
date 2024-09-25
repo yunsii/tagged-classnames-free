@@ -52,8 +52,9 @@
     "test:ui": "vitest --config vite.lib.config.ts --ui",
     "coverage": "vitest run --config vite.lib.config.ts --coverage"
   },
-  "dependencies": {
-    "clsx": "*"
+  "peerDependencies": {
+    "clsx": "*",
+    "tailwind-merge": "*"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.35.3",
@@ -73,6 +74,7 @@
     "@vitest/coverage-v8": "^0.32.2",
     "@vitest/ui": "^0.32.2",
     "autoprefixer": "^10.4.15",
+    "clsx": "^2.1.1",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.1",
