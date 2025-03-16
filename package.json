@@ -43,6 +43,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "test": "vitest",
+    "bench": "vitest bench",
     "test:ui": "vitest --ui",
     "coverage": "vitest run --coverage"
   },
