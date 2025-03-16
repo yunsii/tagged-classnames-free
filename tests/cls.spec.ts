@@ -1,18 +1,18 @@
-import { expect, test } from 'vitest'
+import { expect, it } from 'vitest'
 
 import { cls } from '../src'
 
-test('Basic', () => {
+it('basic', () => {
   const result = cls`text-sm`
   expect(result).toMatchSnapshot()
 })
 
-test('Basic with expressions', () => {
+it('basic with expressions', () => {
   const result = cls`text-sm ${'font-bold'}   ${'bg-sky-500'}`
   expect(result).toMatchSnapshot()
 })
 
-test('Multiple lines', () => {
+it('multiple lines', () => {
   const result = cls`
     text-sm              bg-sky-500
     font-bold
@@ -20,7 +20,7 @@ test('Multiple lines', () => {
   expect(result).toMatchSnapshot()
 })
 
-test('Multiple lines with expressions', () => {
+it('multiple lines with expressions', () => {
   const result = cls`
     text-sm              bg-sky-500
     font-bold ${'font-bold'}   ${'bg-sky-500'}
@@ -28,7 +28,7 @@ test('Multiple lines with expressions', () => {
   expect(result).toMatchSnapshot()
 })
 
-test('Multiple lines with comments', () => {
+it('multiple lines with comments', () => {
   const result = cls`
     // hello
     text-sm              bg-sky-500

@@ -1,18 +1,18 @@
-import { expect, test } from 'vitest'
+import { expect, it } from 'vitest'
 
 import { tw } from '../src'
 
-test('Basic', () => {
+it('basic', () => {
   const result = tw`text-sm`
   expect(result).toMatchSnapshot()
 })
 
-test('Basic with expressions', () => {
+it('basic with expressions', () => {
   const result = tw`text-sm ${'font-bold'}   ${'bg-sky-500'}`
   expect(result).toMatchSnapshot()
 })
 
-test('Multiple lines', () => {
+it('multiple lines', () => {
   const result = tw`
     text-sm  bg-sky-500
     font-bold
@@ -21,7 +21,7 @@ test('Multiple lines', () => {
   expect(result).toMatchSnapshot()
 })
 
-test('Multiple lines with expressions', () => {
+it('multiple lines with expressions', () => {
   const result = tw`
     text-sm              bg-sky-400
     font-bold ${'font-bold'}   ${'bg-sky-500'}
@@ -29,7 +29,7 @@ test('Multiple lines with expressions', () => {
   expect(result).toMatchSnapshot()
 })
 
-test('Multiple lines with comments', () => {
+it('multiple lines with comments', () => {
   const result = tw`
     // hello
     text-sm  bg-sky-500

@@ -1,11 +1,11 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Basic 1`] = `"text-sm"`;
+exports[`basic 1`] = `"text-sm"`;
 
-exports[`Basic with expressions 1`] = `"text-sm font-bold bg-sky-500"`;
+exports[`basic with expressions 1`] = `"text-sm font-bold bg-sky-500"`;
 
-exports[`Multiple lines 1`] = `"bg-sky-500 font-bold text-lg"`;
+exports[`multiple lines 1`] = `"bg-sky-500 font-bold text-lg"`;
 
-exports[`Multiple lines with comments 1`] = `"bg-sky-500 font-bold text-lg"`;
+exports[`multiple lines with comments 1`] = `"bg-sky-500 font-bold text-lg"`;
 
-exports[`Multiple lines with expressions 1`] = `"text-sm font-bold bg-sky-500"`;
+exports[`multiple lines with expressions 1`] = `"text-sm font-bold bg-sky-500"`;
